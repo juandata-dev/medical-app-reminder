@@ -23,7 +23,19 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+                    Router(rememberNavController())
                 }
+            }
+        }
+    }
+}
+
+@Composable
+fun Router(navController: NavHostController) {
+    NavHost(navController = navController, startDestination = "start") {
+        composable("start") {
+            StartScreen {
+                navController.navigate("login")
             }
         }
     }
