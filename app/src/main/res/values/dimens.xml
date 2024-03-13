@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_medium_width">319dp</dimen>
+    <dimen name="button_medium_height">63dp</dimen>
+    <dimen name="app_top_bar_elevation">20dp</dimen>
+    <dimen name="bottom_app_bar_height">56dp</dimen>
+
+    <dimen name="main_screen_blur_radius">10dp</dimen>
+</resources>
