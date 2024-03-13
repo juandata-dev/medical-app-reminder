@@ -38,5 +38,13 @@ fun Router(navController: NavHostController) {
                 navController.navigate("login")
             }
         }
+        composable("login") {
+            LoginScreen {
+                navController.navigate("home")
+            }
+        }
+        composable("home") {
+            HomeScreen()
+        }
     }
 }
